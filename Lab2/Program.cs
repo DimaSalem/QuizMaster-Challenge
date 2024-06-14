@@ -110,7 +110,6 @@ namespace QuizMasterChallenge
             {
                 Console.WriteLine("The exam is finished");
             }
-
         }
     }
 }
