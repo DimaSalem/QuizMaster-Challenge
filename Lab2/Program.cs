@@ -59,15 +59,9 @@ namespace QuizMasterChallenge
                 //handle the error
                 string answer= Console.ReadLine();
 
-                while (string.IsNullOrEmpty(answer))
+                while (string.IsNullOrEmpty(answer)|| answer.Any(char.IsDigit))
                 {
-                    Console.WriteLine("please enter the answer. the answer can't be empty");
-                    answer = Console.ReadLine();
-                }
-
-                while (answer.Any(char.IsDigit))
-                {
-                    Console.WriteLine("Invalid input. Please do not enter numbers. Try again.");
+                    Console.WriteLine("Invalid input. Try again.");
                     answer = Console.ReadLine();
                 }
 
